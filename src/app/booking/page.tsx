@@ -34,7 +34,6 @@ const BookingPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     dispatch(addBooking({
-      id: Date.now(),
       nameLastname: formData.nameLastname,
       tel: formData.tel,
       venue: formData.venue,
