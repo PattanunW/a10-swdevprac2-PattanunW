@@ -42,7 +42,8 @@ const BookingPage = () => {
   };
 
   return (
-    <main className='bg-slate-100 m-5 p-5'>
+    <main className='bg-slate-100 m-5 p-5 mt-24 flex flex-col'>
+      <div className="mt-20">
       <form onSubmit={handleSubmit}>
         <TextField 
           label="Name-Lastname" 
@@ -75,6 +76,7 @@ const BookingPage = () => {
         </LocalizationProvider>
         <Button type="submit" variant="contained" color="primary">Book Venue</Button>
       </form>
+      </div>
     </main>
   );
 };

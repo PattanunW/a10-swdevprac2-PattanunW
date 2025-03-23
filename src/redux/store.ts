@@ -4,6 +4,7 @@ import { TypedUseSelectorHook, useSelector } from "react-redux";
 import { persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist";
 import createWebStorage from "redux-persist/lib/storage/createWebStorage";
 import { WebStorage } from "redux-persist/lib/types";
+import persistStore from "redux-persist/es/persistStore";
 
 function createPersistStorage(): WebStorage {
     const isServer = typeof window === 'undefined';
