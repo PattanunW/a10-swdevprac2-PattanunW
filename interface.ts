@@ -20,8 +20,8 @@ interface VenueItem {
   }
 
   interface BookingItem {
-    nameLastname: string;
-    tel: string;
-    venue: string;
-    bookDate: string;
+    nameLastname: string,
+    tel: string,
+    venue: string,
+    bookDate: string
   }
